@@ -1,0 +1,16 @@
+.button {
+    background-color: rgb(255, 251, 35);
+    font-size: 18px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px ;
+    text-transform: uppercase;
+    padding: .3em 5em;
+    border: transparent;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(209, 206, 20);
+}
