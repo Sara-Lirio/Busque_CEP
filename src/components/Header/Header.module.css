@@ -1,0 +1,32 @@
+.header{
+    background-color: rgb(255, 251, 35);
+    height: 2em;
+    width: 100%;
+}
+
+.container{
+    background-color: rgb(26, 23, 23);
+    height: 6em;
+    width: 60%;
+    margin-left: 34.2em ;
+}
+
+.title{
+    color:rgb(248, 245, 71);
+    text-align: center;
+    padding-top: .8em;
+}
+
+.triangulediv {
+    display: flex;
+    justify-self: flex-end;
+    margin: -2.2em 0 0 .01em
+}
+
+.triangule{
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 100px solid #3b3838;;
+}
