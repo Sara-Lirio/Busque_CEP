@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form'
 import './App.css'
+import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form'
 import Header from './components/Header/Header'
 
@@ -38,6 +39,7 @@ function App() {
         <p className='info'>{info ? info.localidade : ''}</p>
         <p className='info'>{info ? info.uf : ''}</p>
       </div>
+      <Footer/>
     </div>
   )
 }
