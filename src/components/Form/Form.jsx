@@ -3,12 +3,12 @@ import Button from '../Button/Button'
 import Input from '../Input/Input'
 import style from './Form.module.css'
 
-const Form = () => {
+const Form = ({onchange,onclick}) => {
   return (
     <form className={style.form}>
         <h2>Digite seu CEP:</h2>
-        <Input/>
-        <Button/>
+        <Input onchange={onchange}/>
+        <Button onclick={onclick}/>
     </form>
   )
 }

@@ -1,10 +1,9 @@
 import React from 'react'
 import style from './Input.module.css'
 
-const Input = () => {
+const Input = ({onchange}) => {
   return (
-    
-    <input className={style.input}></input>
+    <input className={style.input} type="text" id='input' onChange={onchange}></input>
   )
 }
 
