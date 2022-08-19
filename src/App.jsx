@@ -5,8 +5,8 @@ import Form from './components/Form/Form'
 import Header from './components/Header/Header'
 
 function App() {
-  
-  const {register, handleSubmit} = useForm();
+
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (e) => {
     console.log(e)
@@ -15,7 +15,7 @@ function App() {
   const [info, setInfo] = useState()
   // const [input, setInput] = useState('')
 
-  async function handleSetInput (e) {
+  async function handleSetInput(e) {
     e.preventDefault()
     const input = e.target.value.replace(/\D/g, '')
     console.log(input);
@@ -26,17 +26,18 @@ function App() {
     setInfo(json)
   }
 
-  
+
 
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Form {...register("cep")} onchange={handleSetInput} />
-
-      <p className='local'>{info? info.logradouro : ''}</p>
-      <p className='district'>{info? info.bairro : ''}</p>
-      <p className='city'>{info? info.localidade : ''}</p>
-      <p className='uf'>{info? info.uf : ''}</p>
+      <div className='response'>
+        <p className='info'>{info ? info.logradouro : ''}</p>
+        <p className='info'>{info ? info.bairro : ''}</p>
+        <p className='info'>{info ? info.localidade : ''}</p>
+        <p className='info'>{info ? info.uf : ''}</p>
+      </div>
     </div>
   )
 }

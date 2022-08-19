@@ -1,7 +1,11 @@
-.title {
-    color: white
-}
+.response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
 
-.button {
-    margin: 2em;
+.info {
+    color:white;
+    font-size: 18px;
 }
